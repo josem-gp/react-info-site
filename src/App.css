@@ -17,3 +17,15 @@
     transform: rotate(360deg);
   }
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  column-gap: 14px;
+}
