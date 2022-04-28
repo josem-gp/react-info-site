@@ -2,14 +2,13 @@ import logo from "../logo.svg";
 
 function Navbar() {
   return (
-    <navbar className="nav">
-      <img src={logo} className="App-logo" alt="logo" />
-      <ul className="nav-items">
-        <li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </navbar>
+    <div className="Nav">
+      <div className="Nav-logo">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h3>ReactFacts</h3>
+      </div>
+      <h4>React Course - Project 1</h4>
+    </div>
   );
 }
 

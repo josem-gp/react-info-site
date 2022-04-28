@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .App-logo {
   width: 80px;
   pointer-events: none;
@@ -18,14 +26,21 @@
   }
 }
 
-.nav {
+.Nav {
   display: flex;
   justify-content: space-between;
   padding: 0 16px;
+  background-color: #21222a;
 }
 
-.nav-items {
-  list-style: none;
+.Nav h4 {
+  color: #d7e4f1;
+}
+
+.Nav-logo {
   display: flex;
-  column-gap: 14px;
+}
+
+.Nav-logo h3 {
+  color: #5ac7e6;
 }
