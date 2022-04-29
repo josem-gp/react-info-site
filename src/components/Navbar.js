@@ -2,8 +2,8 @@ import logo from "../logo.svg";
 
 function Navbar() {
   return (
-    <div className="Nav">
-      <div className="Nav-logo">
+    <div className="nav">
+      <div className="nav-logo">
         <img src={logo} className="App-logo" alt="logo" />
         <h3>ReactFacts</h3>
       </div>

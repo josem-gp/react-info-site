@@ -4,6 +4,9 @@
 
 body {
   margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #282d35;
+  height: 100vh;
 }
 
 .App-logo {
@@ -26,21 +29,50 @@ body {
   }
 }
 
-.Nav {
+.nav {
   display: flex;
   justify-content: space-between;
   padding: 0 16px;
   background-color: #21222a;
 }
 
-.Nav h4 {
+.nav h4 {
   color: #d7e4f1;
 }
 
-.Nav-logo {
+.nav-logo {
   display: flex;
 }
 
-.Nav-logo h3 {
+.nav-logo h3 {
   color: #5ac7e6;
+}
+
+main {
+  padding: 57px 27px;
+  color: white;
+  background-image: url(../src/logo.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main-facts {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main-facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main-facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
 }
