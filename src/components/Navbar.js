@@ -1,14 +1,19 @@
 import logo from "../logo.svg";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <div className="nav">
-      <div className="nav-logo">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>ReactFacts</h3>
+    <nav className={props.darkMode ? "dark" : ""}>
+      <img className="nav--logo_icon" src={logo} alt="logo" />
+      <h3 className="nav--logo_text">ReactFacts</h3>
+
+      <div className="toggler">
+        <p className="toggler--light">Light</p>
+        <div className="toggler--slider" onClick={props.toggleDarkMode}>
+          <div className="toggler--slider--circle"></div>
+        </div>
+        <p className="toggler--dark">Dark</p>
       </div>
-      <h4>React Course - Project 1</h4>
-    </div>
+    </nav>
   );
 }
 
